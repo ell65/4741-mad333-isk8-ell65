@@ -1,3 +1,3 @@
 # [Project Name]
-# [Names] Elizabeth Lentine, 
+# [Names] Elizabeth Lentine, Ian Konigsberg, Maximilian de Ledebur
 # [NetIDs] ell65, isk8, mad333
