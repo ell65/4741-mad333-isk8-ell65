@@ -15,3 +15,4 @@ Why this dataset allows us to answer question: <br>
 1. Can see the impact of different combinations of chemical properties on quality scoring <br>
 2. Having wine type column allows us to fine tune the model to each wine type <br>
 3. Can help us identify things such as the ideal alcohol percentage or acidity for making good quality wines <br>
+<br>
