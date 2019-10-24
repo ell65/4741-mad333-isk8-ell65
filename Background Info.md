@@ -10,3 +10,5 @@ https://winefolly.com/review/vinho-verde-the-perfect-poolside-wine-from-portugal
 
 http://winesofvinhoverde.com/vinho-verde-101/
 
+### Volatile Acidity
+https://www.decanter.com/learn/volatile-acidity-va-45532/
