@@ -1,4 +1,2 @@
-# Midterm Report
-## Ian, Max, Liz
-## ORIE 4741 
-
+# ORIE 4741 Project Midterm Report
+## Ian Konigsberg, 
