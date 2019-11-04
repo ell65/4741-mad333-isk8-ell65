@@ -10,7 +10,9 @@ Our group has spent significant time looking into the context of the data we are
 - Lower prices per bottle, on average
 
 
-In our analyses so far we have separated the data into two distinct subsets of red and white wines. Given the considerably more entries corresponding to white wines (most wines from this region are white) we felt it was important to look at them separately to begin to understand the relationships between our features.
+Surface-level knowledge of oenology implies that red and white wines taste, smell, appear, and are assessed quite differently because of the fundamental differences in the techniques used in making them. Namely, red wines are fermented with the seeds and skins still on the grapes. More information on the differences between these two broad categories can be found [here](https://winefolly.com/tutorial/red-wine-vs-white-wine-the-real-differences/ ).
+
+Because of these important differences, we believed it made the most sense to separate data into two distinct subsets of red and white wines. Additionally, given the considerably more entries corresponding to white wines (most wines from this region are white) we felt it was important to look at them separately to begin to understand the relationships between our features without throwing off our results due to a heavier weight towards the good predictors for the white wines.
 <br><br>
 
 So far we have run a few regressions on our data to try to predict the quality of each wine. The assignment for quality in the original data was given based on the median value of three oenologists' rating of the wine on a scale from 1 to 10. We quickly noticed that ratings below 4 and above 7 are quite uncommon in our data.
