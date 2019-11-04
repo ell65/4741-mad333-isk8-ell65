@@ -31,13 +31,19 @@ After running an initial linear regression on the entire feature space, we have 
 <br><br>
 
  "White MSE, test"          0.594466
- "Red MSE, test"            0.419574
- "White MSE, train"         0.563472
- "Red MSE, train"           0.415883
  
+ "Red MSE, test"            0.419574
+ 
+ "White MSE, train"         0.563472
+ 
+ "Red MSE, train"           0.415883
+ <br><br>
  "White Mean error, test"   0.771016
+ 
  "Red Mean error, test"     0.647745
+ 
  "White Mean error, train"  0.750648
+ 
  "Red Mean error, train"    0.64489 
  
  <br><br>
