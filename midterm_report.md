@@ -29,6 +29,12 @@ total: 6497 wines [0, 0, 30, 216, 2138, 2836, 1079, 193, 5]
 
 <br>
 
+Represented as a histogram, the distribution of the ratings in our data looks like:
+
+![](https://github.com/ell65/4741-mad333-isk8-ell65/blob/master/rwhist.jpg)
+
+<br>
+
 After running an initial linear regression on the entire feature space, we have the following results for error:
 <br><br>
 
