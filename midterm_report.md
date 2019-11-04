@@ -25,7 +25,7 @@ total whites: 4870 wines [0, 0, 20, 162, 1448, 2186, 875, 174, 5]
 
 total: 6497 wines [0, 0, 30, 216, 2138, 2836, 1079, 193, 5]
 
-<br><br>
+<br>
 
 After running an initial linear regression on the entire feature space, we have the following results for error:
 <br><br>
