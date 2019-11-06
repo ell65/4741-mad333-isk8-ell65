@@ -46,14 +46,18 @@ After running an initial linear regression on the entire feature space, we have 
  
  "Red MSE, train"           0.415883
  <br><br>
- "White Mean error, test"   0.771016
+ "White Mean absolute error, test"   0.771016
  
- "Red Mean error, test"     0.647745
+ "Red Mean absolute error, test"     0.647745
  
- "White Mean error, train"  0.750648
+ "White Mean absolute error, train"  0.750648
  
- "Red Mean error, train"    0.64489 
+ "Red Mean absolute error, train"    0.64489 
  
  <br><br>
  
- 
+Where is our project headed?
+Our main goal for the forseeable future will be to build a model that can properly categorize wines into one of these three categories: low quality, average quality and high quality. We think a good way to partition our data will be:
+quality rating < 3 ==> low quality , quality rating > 7 ===> high quality, otherwise ==> average quality.
+The two regression analyses that we performed above were simple least squares models with no regularizer term. The output variable, y, in the above regressions was the quality of wine on a scale of 1 to 10, NOT the categories "low, average, high." Therefore, we plan on drastically changing the regressions we performed above to properly categorize the wines. We think a good model to fit will be an ordinal regression. We believe that an ordinal regression will be significantly better at classifying the wines than a linear regression model after feature transformation of our ordinal data. 
+We will also strongly consider the use of a loss function other than least squares. The reason for this is that we believe the greatest use of our model will be to confidently identify good or bad wines and make recommendations about the production of those wines. In other words, we want our loss function to care a lot about misclassifying an average wine as a good or a bad wine (because then we will make a recommendation) and to care less about misclassifying a good or bad wine as an average wine (because then we will not make a recommendation). We think a good loss function to capture this will be hinge loss, although we plan on exploring other options. Furthermore, we think it will be necessary to include a regularizer term to avoid overfitting our data. 
