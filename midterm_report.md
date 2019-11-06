@@ -14,7 +14,11 @@ Surface-level knowledge of oenology implies that red and white wines taste, smel
 
 Because of these important differences, we believed it made the most sense to separate data into two distinct subsets of red and white wines. Additionally, given the considerably more entries corresponding to white wines (most wines from this region are white) we felt it was important to look at them separately to begin to understand the relationships between our features without throwing off our results due to a heavier weight towards the good predictors for the white wines. Below, we include two boxplots to illustrate the importance of separating the white wines from the red wines. The general idea is that using the same model to predict the quality of a reds and whites will not perform well because the features have a different impact on the quality of whites versus reds. In the boxplots, note the differences for volatile acidity < 1 and > 0.8
 <br>
-
+Reds: <br>
+![](https://github.com/ell65/4741-mad333-isk8-ell65/blob/master/Reds_Boxplot.PNG)
+<br>
+Whites: <br>
+![](https://github.com/ell65/4741-mad333-isk8-ell65/blob/master/Whites_Boxplot.PNG)
 <br>
 
 So far we have run a few regressions on our data to try to predict the quality of each wine. The assignment for quality in the original data was given based on the median value of three oenologists' rating of the wine on a scale from 1 to 10. We quickly noticed that ratings below 4 and above 7 are quite uncommon in our data.
