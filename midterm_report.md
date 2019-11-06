@@ -12,13 +12,15 @@ Our group has spent significant time looking into the context of the data we are
 
 Surface-level knowledge of oenology implies that red and white wines taste, smell, appear, and are assessed quite differently because of the fundamental differences in the techniques used in making them. Namely, red wines are fermented with the seeds and skins still on the grapes. More information on the differences between these two broad categories can be found [here](https://winefolly.com/tutorial/red-wine-vs-white-wine-the-real-differences/ ).
 
-Because of these important differences, we believed it made the most sense to separate data into two distinct subsets of red and white wines. Additionally, given the considerably more entries corresponding to white wines (most wines from this region are white) we felt it was important to look at them separately to begin to understand the relationships between our features without throwing off our results due to a heavier weight towards the good predictors for the white wines.
-<br><br>
+Because of these important differences, we believed it made the most sense to separate data into two distinct subsets of red and white wines. Additionally, given the considerably more entries corresponding to white wines (most wines from this region are white) we felt it was important to look at them separately to begin to understand the relationships between our features without throwing off our results due to a heavier weight towards the good predictors for the white wines. Below, we include two boxplots to illustrate the importance of separating the white wines from the red wines. The general idea is that using the same model to predict the quality of a reds and whites will not perform well because the features have a different impact on the quality of whites versus reds. In the boxplots, note the differences for volatile acidity < 1 and > 0.8
+<br>
+
+<br>
 
 So far we have run a few regressions on our data to try to predict the quality of each wine. The assignment for quality in the original data was given based on the median value of three oenologists' rating of the wine on a scale from 1 to 10. We quickly noticed that ratings below 4 and above 7 are quite uncommon in our data.
 <br><br>
 
-Our dataset contained very little missing data. Of the 6,497 wine examples, there were only 27 examples that were missing at least one featurespace value. We also noticed that all of these 27 examples were white wines. Because we had a total of 4,897 white wines, we decided to simply remove the 27 white wines of incomplete cases. This left us with 1,593 red wines and 4,870 white wines of complete cases.  Our featurespace includes 12 features which are all physicochemical properties. Below, we describe the feautures in the featurespace for both red wines and white wines.
+Our dataset contained very little missing data. Of the 6,497 wine examples, there were only 27 examples that were missing at least one featurespace value. We also noticed that all of these 27 examples were white wines. Because we had a total of 4,897 white wines, we decided to simply remove the 27 white wines of incomplete cases. This left us with 1,593 red wines and 4,870 white wines of complete cases.  Our featurespace includes 11 features which are all physicochemical properties. Below, we describe the feautures in the featurespace for both red wines and white wines.
 <br><br>
 
 
@@ -35,7 +37,7 @@ We plan on identifying the most important features in the featurespace and regre
 
 <br>
 
-In fact, when we cleaned our data, we found the following results corresponding to ratings of [1, 2, 3, 4, 5, 6, 7, 8, 9]. 
+After cleaning our data, we found the following results corresponding to ratings of [1, 2, 3, 4, 5, 6, 7, 8, 9]. 
 <br><br>
 
 total reds: 1593 wines [0, 0, 10, 52, 680, 634, 199, 18, 0]
