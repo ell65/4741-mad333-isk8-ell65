@@ -19,11 +19,15 @@ So far we have run a few regressions on our data to try to predict the quality o
 <br><br>
 
 Our dataset contained very little missing data. Of the 6,497 wine examples, there were only 27 examples that were missing at least one featurespace value. We also noticed that all of these 27 examples were white wines. Because we had a total of 4,897 white wines, we decided to simply remove the 27 white wines of incomplete cases. This left us with 1,593 red wines and 4,870 white wines of complete cases.  Our featurespace includes 12 features which are all physicochemical properties. Below, we describe the feautures in the featurespace for both red wines and white wines.
-<br>
+<br><br>
+
+
 WHITE: <br>
-
+![](https://github.com/ell65/4741-mad333-isk8-ell65/blob/master/Whites.PNG)
+<br>
 RED: <br>
-
+![](https://github.com/ell65/4741-mad333-isk8-ell65/blob/master/Reds.PNG)
+<br>
 
 How will we prevent overfitting? <br>
 We plan on identifying the most important features in the featurespace and regressing on only these important features.
