@@ -18,6 +18,19 @@ Because of these important differences, we believed it made the most sense to se
 So far we have run a few regressions on our data to try to predict the quality of each wine. The assignment for quality in the original data was given based on the median value of three oenologists' rating of the wine on a scale from 1 to 10. We quickly noticed that ratings below 4 and above 7 are quite uncommon in our data.
 <br><br>
 
+Our dataset contained very little missing data. Of the 6,497 wine examples, there were only 27 examples that were missing at least one featurespace value. We also noticed that all of these 27 examples were white wines. Because we had a total of 4,897 white wines, we decided to simply remove the 27 white wines of incomplete cases. This left us with 1,593 red wines and 4,870 white wines of complete cases.  Our featurespace includes 12 features which are all physicochemical properties. Below, we describe the feautures in the featurespace for both red wines and white wines.
+<br>
+WHITE: <br>
+
+RED: <br>
+
+
+How will we prevent overfitting? <br>
+We plan on identifying the most important features in the featurespace and regressing on only these important features.
+
+
+<br>
+
 In fact, when we cleaned our data, we found the following results corresponding to ratings of [1, 2, 3, 4, 5, 6, 7, 8, 9]. 
 <br><br>
 
@@ -34,6 +47,8 @@ Represented as a histogram, the distribution of the ratings in our data looks li
 ![](https://github.com/ell65/4741-mad333-isk8-ell65/blob/master/rwhist.jpg)
 
 <br>
+
+
 
 After running an initial linear regression on the entire feature space, we have the following results for error:
 <br><br>
@@ -56,9 +71,9 @@ After running an initial linear regression on the entire feature space, we have 
  
  <br><br>
  
-Where is our project headed?
+Where is our project headed? <br>
 Our main goal for the forseeable future will be to build a model that can properly categorize wines into one of these three categories: low quality, average quality and high quality. We think a good way to partition our data will be: <br>
-quality rating < 3 ==> low quality , quality rating > 7 ===> high quality, otherwise ==> average quality.
+quality rating < 4 ==> low quality , quality rating > 7 ===> high quality, otherwise ==> average quality.
 <br>
 The two regression analyses that we performed above were simple least squares models with no regularizer term. The output variable, y, in the above regressions was the quality of wine on a scale of 1 to 10, NOT the categories "low, average, high." Therefore, we plan on drastically changing the regressions we performed above to properly categorize the wines. We think a good model to fit will be an ordinal regression. We believe that an ordinal regression will be significantly better at classifying the wines than a linear regression model after feature transformation of our ordinal data. 
 <br>
